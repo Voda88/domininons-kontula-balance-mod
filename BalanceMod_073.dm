@@ -1470,7 +1470,7 @@
 #end
 
 #selectitem 66 -- ice pebble staff
-#itemcost1 -30
+#itemcost1 -50
 #end
 
 #selectitem 73 -- wand of wild fire
