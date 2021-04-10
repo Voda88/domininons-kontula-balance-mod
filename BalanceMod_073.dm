@@ -1454,7 +1454,7 @@
 #end
 
 #selectitem 43 -- hardwood club
-#itemcost1 -20
+#itemcost1 -80
 #end
 
 #selectitem 48 -- vine whip
