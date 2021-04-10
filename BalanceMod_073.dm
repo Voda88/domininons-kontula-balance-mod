@@ -1453,7 +1453,7 @@
 #end
 
 #selectitem 18 -- blacksteel sword
-#itemcost1 -20
+#itemcost1 -80
 #end
 
 #selectitem 28 -- lightning rod
