@@ -588,13 +588,12 @@
 
 #selectspell 768 -- summon kithaironic lion
 #pathlevel 0 2
-#fatiguecost 400
+#fatiguecost 200
 #end
 
 #selectspell 768 -- summon leogryphs
 #fatiguecost 1600
 #end
-
 
 #selectmonster 593 -- draconian
 #att 12
