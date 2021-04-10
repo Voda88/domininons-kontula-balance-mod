@@ -1395,7 +1395,7 @@
 
 #selectitem 7 -- flambeau
 #mainlevel 2
-#itemcost1 -50
+#itemcost1 -60
 #end
 
 #selectitem 10 -- ice sword
