@@ -1548,6 +1548,7 @@
 
 #selectitem 72 -- fire bola
 #itemcost1 -80
+#constlevel 2
 #end
 
 #selectweapon 301 -- Fire Bola
