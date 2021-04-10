@@ -1,6 +1,6 @@
-#modname "BalanceMod 0.73"
-#description "The balance mod to end all balance mods!"
-#version 0.73
+#modname "k-balance 0.01"
+#description "Often the hand of balance must be forced"
+#version 0.01
 #icon "./balance/banner.tga"
 
 -- SCALES  
@@ -1548,6 +1548,7 @@
 
 #selectitem 72 -- fire bola
 #itemcost1 -80
+#constlevel 2
 #end
 
 #selectweapon 301 -- Fire Bola
@@ -1744,6 +1745,43 @@
 #selectitem 211 -- kitharonic lion pelt
 #constlevel 4
 #end
+
+#newitem 521 -- frozen grenade
+#name "Frozen Grenade"
+#constlevel 4
+#mainpath 2
+#mainlevel 3
+#spr "./balance/frozengrenade.tga"
+#type 1
+#descr "This frozen globe creates a freezing blast that encases nearby enemies in blocks of ice."
+#weapon 901
+#autospellrepeat 0
+#prec 2
+#coldres 5
+#end
+
+#newweapon 901
+#name "Frozen Grenade"
+#dmg 1
+#nratt 1
+#att 0
+#def 0
+#len 0
+#sound 21
+#natural
+#range -1
+#ammo 10
+#dt_normal
+on
+#armornegating
+#nostr
+#mrnegates
+#aoe 4
+#secondaryeffectalways 409
+#explspr 10108
+#flightspr 137
+#end
+
 
 #selectitem 217 -- silver hauberk
 #mainlevel 1
@@ -4734,6 +4772,13 @@ Dominion: Spreads Turmoil"
 
 #selectspell 289 -- unholy power
 #precision 100
+#end
+
+#selectspell 666 -- frozen heart
+#researchlevel 4
+#damage 1
+#precision 100
+#spec 36028797581017728
 #end
 
 #selectmonster 669 -- scelerian thaumaturg
