@@ -48,6 +48,10 @@
 #dmg 16
 #end
 
+#selectweapon 214 -- fire arbalest
+#dmg 16
+#end
+
 #selectweapon 24 -- long bow
 #dmg 12
 #end
