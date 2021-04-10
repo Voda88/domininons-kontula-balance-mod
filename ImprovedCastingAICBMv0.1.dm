@@ -27,21 +27,7 @@
 #end
 
 -- Air
-#selectspell "Phantasmal Warrior" -- Buffed in CBM, more HP
-#aispellmod 10
-#end
 
-#selectspell "Phantasmal Army" -- Buffed in CBM, more HP
-#aispellmod 10
-#end
-
-#selectspell "Ghost Wolves" -- Buffed in CBM, more HP
-#aispellmod 10
-#end
-
-#selectspell "False Horror" -- Buffed in CBM, more HP
-#aispellmod 10
-#end
 
 #selectspell "Steal Breath"
 #aispellmod -90
@@ -58,6 +44,11 @@
 #selectspell "Encase in Ice"
 #aispellmod -50
 #end
+
+#selectspell "Cold Darts"
+#aispellmod -50
+#end
+
 -- Earth
 #selectspell "Flying Shards"
 #aispellmod -95
@@ -140,6 +131,23 @@
 #end
 
 -- Air
+
+#selectspell "Phantasmal Warrior" -- Buffed in CBM, more HP
+#aispellmod 10
+#end
+
+#selectspell "Phantasmal Army" -- Buffed in CBM, more HP
+#aispellmod 10
+#end
+
+#selectspell "Ghost Wolves" -- Buffed in CBM, more HP
+#aispellmod 10
+#end
+
+#selectspell "False Horror" -- Buffed in CBM, more HP
+#aispellmod 10
+#end
+
 #selectspell "Thunder Strike"
 #aispellmod 40
 #end
@@ -170,6 +178,10 @@
 #end
 
 #selectspell "Falling Frost"
+#aispellmod 30
+#end
+
+#selectspell "Slime Ball"
 #aispellmod 30
 #end
 

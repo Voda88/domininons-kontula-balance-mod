@@ -1,6 +1,6 @@
-#modname "BalanceMod 0.72"
+#modname "BalanceMod 0.73"
 #description "The balance mod to end all balance mods!"
-#version 0.72
+#version 0.73
 #icon "./balance/banner.tga"
 
 -- SCALES  
@@ -46,6 +46,12 @@
 
 #selectweapon 141 -- poison spit used mainly by nagas
 #range0
+#end
+
+#selectweapon 199 -- banefire bow
+#dmg 8
+#range 40
+#att 1
 #end
 
 #selectweapon 224 -- poison spit, unused
@@ -537,21 +543,35 @@
 #end
 
 #selectmonster 408 -- water elemental size 6
+#clearweapons
+#weapon 90 -- crush
+#weapon 90 -- crush
+#weapon 90 -- crush
 #def 11
 #uwregen 5
 #end
 
 #selectmonster 409 -- water elemental size 5
+#clearweapons
+#weapon 90 -- crush
+#weapon 90 -- crush
+#weapon 90 -- crush
 #def 11
 #uwregen 5
 #end
 
 #selectmonster 410 -- water elemental size 4
+#clearweapons
+#weapon 90 -- crush
+#weapon 90 -- crush
 #def 11
 #uwregen 5
 #end
 
 #selectmonster 411 -- water elemental size 3
+#clearweapons
+#weapon 90 -- crush
+#weapon 90 -- crush
 #def 11
 #uwregen 5
 #end
@@ -568,6 +588,30 @@
 
 #selectspell 768 -- summon kithaironic lion
 #pathlevel 0 2
+#fatiguecost 400
+#end
+
+#selectmonster 593 -- draconian
+#att 12
+#prot 12
+#clearweapons
+#weapon 223 -- venomous bite, weak poison
+#weapon 583 -- taloned kick
+#clearspec
+#poisonres 15
+#flying
+#mountainsurvival
+#end
+
+#selectmonster 620 -- draconian chief
+#prot 13
+#clearweapons
+#weapon 223
+#weapon 583
+#clearspec
+#poisonres 15
+#flying
+#mountainsurvival
 #end
 
 #selectspell 788 -- ghost grip
@@ -610,6 +654,60 @@
 #def 11
 #bodyguard 1
 #end
+
+#selectmonster 998 -- bane lord
+#fear 5
+#cleararmor
+#armor 18 -- full chain mail
+#armor 21 -- full helmet
+#end
+
+#selectspell 793 -- spirits of the wood
+#descr "The caster summons several spirits that inhabit ancient trees. These Woodland Spirits are stunningly beautiful and ethereal and have the power to entangle enemies and regenerate from wounds as long as they are in a forest."
+#onlygeosrc 128
+#end
+
+#selectmonster 932 -- woodland spirit
+#descr "Ancient trees are sometimes inhabited by spirits that can manifest themselves as beautiful women. These spirits are stunningly beautiful and few mortals would willingly harm them. Woodland Spirits are ethereal and have the power to entangle enemies and regenerate wounds as long as they are in a forest."
+#clearweapons
+#weapon 137 -- entanglement
+#weapon 63 -- life drain
+#mor 12
+#homesick 0
+#plainshape 8011
+#end
+
+#newmonster 8011
+#copystats 932
+#copyspr 932
+#clearweapons
+#weapon 63
+#regeneration 0
+#plainshape 0
+#forestshape 932
+#end
+
+#selectspell 806 -- contact hill giant
+#descr "This ritual summons a Hill Giant and forces him to serve. Hill Giants are exceptionally strong and tough, and so large that they can grab and swallow human-sized beings, but they are also too stupid to follow orders."
+#end
+
+#selectmonster 2230 -- hill giant
+#mr 10
+#prot 13
+#end
+
+#selectspell 813 
+#descr "This ritual summons a Forest Giant and forces him to serve. Forest Giants are not as physically powerful as Hill Giants, but they are somewhat more clever and willing to follow orders."
+#end
+
+#selectmonster 2229 -- forest giant
+#mr 10
+#att 12
+#prot 9
+#clearspec
+#forestsurvival
+#end
+
 
 #selectspell 808 -- acashic knowledge
 #fatiguecost 2000
@@ -1168,6 +1266,7 @@
 #weapon 69 -- icicle fist
 #weapon 69
 #cold 8
+#coldpower 1
 #end
 
 #selectmonster 832 -- ice elemental size 5
@@ -1175,6 +1274,7 @@
 #clearweapons
 #weapon 69
 #cold 7
+#coldpower 1
 #end
 
 #selectmonster 833 -- ice elemental size 4
@@ -1182,6 +1282,7 @@
 #clearweapons
 #weapon 69
 #cold 6
+#coldpower 1
 #end
 
 #selectmonster 834 -- ice elemental size 3
@@ -1189,6 +1290,7 @@
 #clearweapons
 #weapon 69
 #cold 5
+#coldpower 1
 #end
 
 #selectmonster 835 -- ice elemental size 2
@@ -1196,6 +1298,7 @@
 #clearweapons
 #weapon 69
 #cold 4
+#coldpower 1
 #end
 
 #selectmonster 836 -- ice elemental size 1
@@ -1203,6 +1306,7 @@
 #clearweapons
 #weapon 69
 #cold 3
+#coldpower 1
 #end
 
 #selectmonster 910 -- rhuax, king of magma
@@ -1251,6 +1355,7 @@
 #selectmonster 2225 -- fire ant
 #clearspec -- for undisciplined
 #fireres 5
+#poisonres 15
 #stealthy 0
 #animal
 #magicbeing
@@ -1328,6 +1433,10 @@
 
 #selectitem 18 -- blacksteel sword
 #itemcost1 -20
+#end
+
+#selectitem 28 -- lightning rod
+#autospell "Summon Storm Power"
 #end
 
 #selectweapon 108 -- greatsword of sharpnes
@@ -2149,7 +2258,7 @@
 #goddomdeath 0
 #end
 
-#selectsite 1124 -- throne of autumn
+#selectsite 1126 -- throne of autumn
 #goddomdeath 0
 #end
 
@@ -2217,6 +2326,7 @@ Syncretism: Enemy temples are not razed, but converted if a priest is in the arm
 #selectmonster 1106
 #enc 3
 #end
+
 #newmonster 8000
 #copystats 1106
 #name "Lizard Optio"
@@ -2722,7 +2832,6 @@ Syncretism: Enemy temples are not razed, but converted if a priest is in the arm
 #end
 
 #selectmonster 161 -- sauromancer
-#invulnerable 15
 #prot 5
 #enc 3
 #end
@@ -2828,7 +2937,6 @@ Syncretism: Enemy temples are not razed, but converted if a priest is in the arm
 
 #selectmonster 2205 -- pretender: great sauromancer
 #gcost 100
-#invulnerable 15
 #end
 
 #newmonster 8009
@@ -2963,10 +3071,6 @@ Priests: Average, can perform blood sacrifices"
 #def 11
 #rpcost 31
 #spiritsight
-#end
-
-#selectweapon 426 -- obsidian glaive
-#pierce
 #end
 
 #selectmonster 1462 -- cavern guard
@@ -3136,8 +3240,25 @@ Priests: Average, can perform blood sacrifices"
 #uwbuild 1
 #end
 
-#selectmonster 1790
+#selectmonster 1796 -- fomorian militia
+#startaff 50
+#end
+
+#selectmonster 1797 -- fomorian javelinist
+#startaff 30
+#end
+
+#selectmonster 1798 -- fomorian spearman
+#startaff 30
+#end
+
+#selectmonster 1799 -- fomorian warrior
+#startaff 15
+#end
+
+#selectmonster 1790 -- nemedian warrior
 #gcost 10040
+#rpcost 35
 #end
 
 #selectmonster 1801 -- fomorian giant
@@ -3524,12 +3645,13 @@ Priests: Average, can perform blood sacrifices"
 #nationinc -10
 #mountlabcost 250
 #spreadchaos 3
-#summary "Race: Demons. Income reduced by 10%. 15 percent extra gold and resources in cave forts.
+#summary "Race: Demons. Income reduced by 10%. 15% extra gold and resources in cave forts.
 Military: Semi-immortal Oni, Bakemono and human servants. Light infantry, medium infantry.
 Magic: Death, Fire, Earth, some Air and Nature. Powerful mages, bad at research. High magic gem income.
 Priests: Weak, provinces with temples spawn Oni.
 Dominion: Spreads Turmoil"
 #addgod 2784 -- thrice horned boar
+#cheapgod20 2465 -- statue of war
 #end
 
 #selectsite 95 -- mountain of the oni kings
@@ -3541,38 +3663,6 @@ Dominion: Spreads Turmoil"
 #pathlevel 0 4
 #researchlevel 5
 #fatiguecost 4000
-#end
-
-#selectmonster 1261 -- ko-oni spirit
-#itemslots 12294
-#end
-
-#selectmonster 1263 -- oni spirit
-#itemslots 12294
-#end
-
-#selectmonster 1265 -- ao-oni spirit
-#itemslots 12294
-#end
-
-#selectmonster 1267 -- aka-oni spirit
-#itemslots 12294
-#end
-
-#selectmonster 1269 -- kuro-oni spirit
-#itemslots 12294
-#end
-
-#selectmonster 1273 -- oni spirit
-#itemslots 12294
-#end
-
-#selectmonster 1275 -- kuro-oni spirit
-#itemslots 12294
-#end
-
-#selectmonster 1277 -- oni shugo spirit
-#itemslots 12294
 #end
 
 #selectmonster 1311 -- bandit
@@ -3600,17 +3690,13 @@ Dominion: Spreads Turmoil"
 #researchbonus 2
 #end
 
-#selectmonster 1317 -- dai oni spirit
-#itemslots 12294
-#end
-
 #selectmonster 1432 -- hannya
 #gcost 65
 #end
 
-#selectmonster 1837 -- recruitable ko-oni spirit
-#itemslots 12294
-#end
+#selectmonster 1435 -- nushi serpent form
+#homesick 20
+#end			
 
 #selectmonster 2978 -- pretender: master sorcerer
 #onisummon 25
@@ -3620,16 +3706,8 @@ Dominion: Spreads Turmoil"
 #gcost 200
 #end
 
-#selectmonster 2204 -- oni kunshu spirit
-#itemslots 12294
-#end
-
 #selectmonster 3070 -- chunari
 #gcost 65
-#end
-
-#selectmonster 3085 -- amanojaku spirit
-#itemslots 12294
 #end
 
 #selectspell 447 -- summon ko-oni
@@ -3744,6 +3822,7 @@ Dominion: Spreads Turmoil"
 
 #selectmonster 2033 -- kohen
 #gcost 10045
+#adeptsacr 1
 #end
 
 #selectmonster 2082 -- pretender: son of the fallen
@@ -4131,10 +4210,6 @@ Dominion: Spreads Turmoil"
 #reclimit 3
 #end
 
-#selectmonster 3376 -- marid
-#amphibian -- BUGFIX
-#end
-
 #selectmonster 3473 -- firstborn of the smokeless flame
 #spr1 "./balance/firstborn1.tga"
 #spr2 "./balance/firstborn2.tga"
@@ -4144,6 +4219,9 @@ Dominion: Spreads Turmoil"
 #magicskill 1 1
 #magicskill 3 1
 #armor 196
+#size 6
+#drawsize 20
+#hp 65
 #end
 
 #selectspell 1174 -- summon ghulah
@@ -4163,6 +4241,7 @@ Dominion: Spreads Turmoil"
 
 #selectweapon 464 -- basalt spear
 #def 0
+#rcost 4
 #end
 
 #selectarmor 153 -- basalt armor
@@ -4261,14 +4340,6 @@ Dominion: Spreads Turmoil"
 
 #selectmonster 1402 -- pretender: polypal queen
 #astralrange 1
-#end
-
-#selectmonster 1403 -- giboleth
-#voidsanity 5
-#end
-
-#selectmonster 1522 -- giboleth
-#voidsanity 5
 #end
 
 #selectmonster 1518 -- slave mage
@@ -4374,18 +4445,22 @@ Dominion: Spreads Turmoil"
 #end
 
 #selectmonster 1054 -- siren, watershape
+#gcost 150
 #spellsinger
 #sailing 3 3
 #mapmove 20
 #enchrebate50 0
 #enchrebate50p 50
+#custommagic 768 100
 #end
 
 #selectmonster 1055 -- siren, landshape
+#gcost 150
 #spellsinger
 #sailing 3 3
 #enchrebate50 0
 #enchrebate50p 50
+#custommagic 768 100
 #end
 
 #selectmonster 1408 -- ichtycentaur, watershape
@@ -5071,11 +5146,6 @@ Priests: Average"
 #holy
 #end
 
-#selectweapon 598 -- shard glaive
-#pierce
-#end
-
-
 -- ABYSIA
 #selectmonster 85 -- anathemant salamander
 #prec 11
@@ -5551,6 +5621,7 @@ Priests: Average"
 #startunittype2 1391 -- bakemono archer
 #startunitnbrs2 20
 #addgod 2784 -- thrice horned boar
+#cheapgod20 2465 -- statue of war
 #end
 
 #selectmonster 1608 -- bakemono shaman
@@ -5711,7 +5782,6 @@ Priests: Average"
 #def 10
 #end
 
-
 -- NAZCA
 #selectnation 67
 #startunitnbrs1 18
@@ -5726,10 +5796,16 @@ Priests: Average"
 
 #selectmonster 2685 -- viracocha
 #gcost 250
+#size 6
+#drawsize 10
+#hp 90
 #end
 
 #selectmonster 2686 -- apu intu
 #gcost 250
+#size 6
+#drawsize 10
+#hp 90
 #end
 
 #selectmonster 2693 -- heavenly condor
@@ -5748,6 +5824,9 @@ Priests: Average"
 
 #selectmonster 2698 -- apu illapu
 #gcost 240
+#size 6
+#drawsize 10
+#hp 90
 #end
 
 #selectmonster 2699 -- ayar
@@ -6813,6 +6892,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #startunittype2 1239 -- samurai archer
 #startunitnbrs2 15
 #addgod 2784 -- thrice horned boar
+#cheapgod20 2465 -- statue of war
 #end
 
 #newevent
@@ -7529,12 +7609,19 @@ Dominion: Summons ghosts and shadows. Kills population."
 #researchbonus -20
 #gcost 200
 #mountainsurvival
+#clearweapons
+#weapon 20 -- bite
+#weapon 29 -- claw
 #end
 
 #selectmonster 1379 -- keeper of the bridge
 #gcost 180
 #clearweapons
-#weapon 75
+#weapon 75 -- enchanted sword
+#size 6
+#drawsize 10
+#hp 95
+#str 22
 #end
 
 #selectmonster 1561 -- father of winters
@@ -7544,6 +7631,10 @@ Dominion: Summons ghosts and shadows. Kills population."
 #selectmonster 2239 -- asynja N2A1
 #autodishealer 3
 #gcost 210
+#size 6
+#drawsize 10
+#hp 85
+#str 20
 #end
 
 #selectmonster 2800 -- ormr
@@ -7581,6 +7672,9 @@ Dominion: Summons ghosts and shadows. Kills population."
 
 #selectmonster 3086 -- deives of the sun
 #gcost 200
+#size 6
+#drawsize 10
+#hp 85
 #end
 
 -- CELTIC
@@ -7595,6 +7689,10 @@ Dominion: Summons ghosts and shadows. Kills population."
 
 #selectmonster 1378 -- lord of the forest
 #gcost 180
+#size 6
+#drawsize 10
+#hp 95
+#str 22
 #end
 
 #selectmonster 2450 -- horned one
@@ -7656,6 +7754,9 @@ Dominion: Summons ghosts and shadows. Kills population."
 #selectmonster 3082 -- matrona of the healing spring
 #autohealer 3
 #gcost 240
+#size 6
+#drawsize 10
+#hp 85
 #end
 
 -- MEDITERRANEAN
@@ -7725,6 +7826,9 @@ Dominion: Summons ghosts and shadows. Kills population."
 #autodishealer 0
 #autohealer 3
 #gcost 240
+#size 6
+#drawsize 10
+#hp 85
 #end
 
 #selectmonster 1371 -- titan of death and rebirth
@@ -7790,22 +7894,37 @@ Dominion: Summons ghosts and shadows. Kills population."
 
 #selectmonster 3205 -- titan of crossroads 1
 #gcost 260
+#size 6
+#drawsize 10
+#hp 85
 #end
 
 #selectmonster 3206 -- titan of crossroads 2
 #gcost 260
+#size 6
+#drawsize 10
+#hp 85
 #end
 
 #selectmonster 3207 -- titan of crossroads 3
 #gcost 260
+#size 6
+#drawsize 10
+#hp 85
 #end
 
 #selectmonster 3208 -- titan of spring
 #gcost 180
+#size 6
+#drawsize 10
+#hp 85
 #end
 
 #selectmonster 3209 -- titan of growth
 #gcost 180
+#size 6
+#drawsize 10
+#hp 85
 #end
 
 #selectmonster 3416 -- great archon
@@ -7847,9 +7966,6 @@ Dominion: Summons ghosts and shadows. Kills population."
 
 #selectmonster 2457 -- bodhisattiva of mercy
 #gcost 210
-#end
-
-#selectmonster 2465 -- statue of war
 #end
 
 #selectmonster 2556 -- celestial carp
@@ -7920,6 +8036,9 @@ Dominion: Summons ghosts and shadows. Kills population."
 
 #selectmonster 1374 -- annunaki of the morning star
 #gcost 200
+#size 6
+#drawsize 10
+#hp 85
 #end
 
 #selectmonster 1384 -- solar disc
@@ -7943,6 +8062,10 @@ Dominion: Summons ghosts and shadows. Kills population."
 
 #selectmonster 2435 -- annunaki of love and war
 #gcost 220
+#size 6
+#drawsize 10
+#hp 95
+#str 22
 #end
 
 #selectmonster 2436 -- annunaki of the moon
@@ -7956,6 +8079,9 @@ Dominion: Summons ghosts and shadows. Kills population."
 #selectmonster 2438 -- annunaki of the underworld
 #gcost 230
 #pooramphibian
+#size 6
+#drawsize 10
+#hp 85
 #end
 
 #selectmonster 2462 -- golden idol
@@ -7993,11 +8119,17 @@ Dominion: Summons ghosts and shadows. Kills population."
 
 #selectmonster 3369 -- ilahat of fate
 #gcost 190
+#size 6
+#drawsize 10
+#hp 85
 #end
 
 #selectmonster 3370 -- ilahat of might
 #gcost 200
 #startdom 4
+#size 6
+#drawsize 10
+#hp 90
 #end
 
 #selectmonster 3386 -- ilah of the sky
@@ -8023,6 +8155,8 @@ Dominion: Summons ghosts and shadows. Kills population."
 #selectmonster 603 -- teotl of rain
 #gcost 210
 #pooramphibian
+#size 6
+#drawsize 10
 #end
 
 #selectmonster 604 -- teotl of the night
@@ -8038,18 +8172,32 @@ Dominion: Summons ghosts and shadows. Kills population."
 
 #selectmonster 2442 -- teotl of war
 #gcost 210
+#size 6
+#drawsize 10
+#hp 95
+#str 24
 #end
 
 #selectmonster 2443 -- teotl of the sky
 #gcost 200
+#flying
+#size 6
+#drawsize 10
+#hp 90
 #end
 
 #selectmonster 2444 -- teotl of the underworld
 #gcost 210
+#size 6
+#drawsize 10
+#hp 90
 #end
 
 #selectmonster 2755 -- hun came
 #gcost 250
+#size 6
+#drawsize 10
+#hp 90
 #end
 
 #selectmonster 2756 --  bolon-ti-ku
@@ -8231,6 +8379,9 @@ Dominion: Summons ghosts and shadows. Kills population."
 -- DEEPS
 #selectmonster 109 -- dagon
 #gcost 250
+#size 6
+#drawsize 10
+#hp 135
 #end
 
 #selectmonster 248 -- arch mage
@@ -8239,6 +8390,11 @@ Dominion: Summons ghosts and shadows. Kills population."
 
 #selectmonster 294 -- nerid
 #gcost 180
+#drawsize 10
+#size 6
+#hp 95
+#str 20
+#mapmove 20
 #end
 
 #selectmonster 973 -- kraken
@@ -8338,10 +8494,18 @@ Dominion: Summons ghosts and shadows. Kills population."
 #cleararmor
 #armor 38 -- blacksteel full plate
 #gcost 200
+#size 6
+#drawsize 10
+#hp 95
+#str 24
 #end
 
 #selectmonster 1370 -- volla of the bountiful waters
 #gcost 180
+#size 6
+#drawsize 10
+#hp 85
+#str 20
 #end
 
 #selectmonster 2785 -- solar eagle
@@ -8410,8 +8574,16 @@ Dominion: Summons ghosts and shadows. Kills population."
 #addreccom 8010
 #end
 
+#selectmonster 369 -- nightmare
+#enc 10
+#end
+
 #selectmonster 576 -- amber clan priest, site
 #gcost 9990
+#end
+
+#selectmonster 1389 -- blood lord
+#homesick 10
 #end
 
 #selectmonster 1514 -- lizard shaman
