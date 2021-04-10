@@ -597,7 +597,7 @@
 #end
 
 #selectspell 713 -- summon animals
-#nreff 2033
+#nreff 2025
 #end
 
 #selectmonster 593 -- draconian
