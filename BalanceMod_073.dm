@@ -1458,7 +1458,7 @@
 #end
 
 #selectitem 48 -- vine whip
-#itemcost1 -50
+#itemcost1 -80
 #end
 
 #selectitem 49 -- gloves of gladiator
