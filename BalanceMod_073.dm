@@ -1428,7 +1428,7 @@
 #end
 
 #selectitem 17 -- sling of accuracy
-#itemcost1 -20
+#itemcost1 -80
 #end
 
 #selectitem 18 -- blacksteel sword
