@@ -2834,7 +2834,7 @@ Syncretism: Enemy temples are not razed, but converted if a priest is in the arm
 #end
 
 #selectweapon 606 -- frost bow
-#dmg 8
+#dmg 9
 #range 40
 #att 1
 #end
