@@ -592,7 +592,12 @@
 #end
 
 #selectspell 768 -- summon leogryphs
-#fatiguecost 1600
+#fatiguecost 600
+#nreff 1000
+#end
+
+#selectspell 713 -- summon animals
+#nreff 2033
 #end
 
 #selectmonster 593 -- draconian
@@ -1475,6 +1480,10 @@
 
 #selectitem 66 -- ice pebble staff
 #itemcost1 -50
+#end
+
+#selectitem 72 -- fire bola
+#itemcost1 -80
 #end
 
 #selectitem 73 -- wand of wild fire
