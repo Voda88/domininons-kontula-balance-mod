@@ -1550,6 +1550,10 @@
 #itemcost1 -80
 #end
 
+#selectweapon 301 -- Fire Bola
+#dmg 2
+#end
+
 #selectitem 73 -- wand of wild fire
 #itemcost1 -50
 #end
@@ -1845,6 +1849,7 @@
 #selectitem 299 -- pills of water breathing
 #itemcost1 -50
 #end
+
 
 #selectitem 302 -- wall shaker
 #mainlevel 2
