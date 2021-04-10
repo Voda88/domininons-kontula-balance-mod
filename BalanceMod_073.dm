@@ -52,6 +52,11 @@
 #dmg 12
 #end
 
+#selectweapon 25 -- cross bow
+#dmg 11
+#end
+
+
 #selectweapon 28 -- long spear
 #att 1
 #end
