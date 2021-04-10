@@ -591,6 +591,11 @@
 #fatiguecost 400
 #end
 
+#selectspell 768 -- summon leogryphs
+#fatiguecost 1600
+#end
+
+
 #selectmonster 593 -- draconian
 #att 12
 #prot 12
