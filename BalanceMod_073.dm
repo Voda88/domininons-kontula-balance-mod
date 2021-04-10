@@ -1387,7 +1387,7 @@
 
 -- ITEMS
 #selectitem 1 -- fire sword
-#itemcost1 -20
+#itemcost1 -80
 #end
 
 #selectitem 2 -- burning blade sword
