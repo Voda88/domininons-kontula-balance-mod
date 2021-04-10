@@ -1,5 +1,5 @@
 #modname "BalanceMod 0.73"
-#description "The balance mod to end all balance mods!"
+#description "Occasionally the hand of balance must be forced"
 #version 0.73
 #icon "./balance/banner.tga"
 
