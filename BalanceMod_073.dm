@@ -645,7 +645,7 @@
 #end
 
 #selectspell 713 -- summon animals
-#nreff 2025
+#nreff 3025
 #end
 
 #selectspell 725 -- summon horned serpents
