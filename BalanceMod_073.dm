@@ -4737,6 +4737,13 @@ Dominion: Spreads Turmoil"
 #precision 100
 #end
 
+#selectspell 666 -- frozen heart
+#researchlevel 4
+#damage 1
+#precision 100
+#spec 36028797581017728
+#end
+
 #selectmonster 669 -- scelerian thaumaturg
 #gcost 130
 #end
