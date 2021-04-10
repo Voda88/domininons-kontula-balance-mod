@@ -600,6 +600,10 @@
 #nreff 2025
 #end
 
+#selectspell 725 -- summon horned serpents
+#nreff 2010
+#end
+
 #selectmonster 593 -- draconian
 #att 12
 #prot 12
