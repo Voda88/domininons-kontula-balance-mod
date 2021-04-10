@@ -608,6 +608,10 @@
 #nreff 2010
 #end
 
+#selectspell 718 -- summon fire ants
+#nreff 2015
+#end
+
 #selectmonster 593 -- draconian
 #att 12
 #prot 12
