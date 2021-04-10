@@ -40,8 +40,32 @@
 #dmg 9
 #end
 
+#selectweapon 211 -- fire short bow
+#dmg 9
+#end
+
+#selectweapon 26 -- arbalest
+#dmg 16
+#end
+
+#selectweapon 214 -- fire arbalest
+#dmg 16
+#end
+
 #selectweapon 24 -- long bow
 #dmg 12
+#end
+
+#selectweapon 212 -- fire long bow
+#dmg 12
+#end
+
+#selectweapon 25 -- crossbow
+#dmg 11
+#end
+
+#selectweapon 213 -- fire crossbow
+#dmg 11
 #end
 
 #selectweapon 28 -- long spear
@@ -70,6 +94,14 @@
 #dmg 10
 #end
 
+#selectweapon 356 -- fire composite bow
+#dmg 10
+#end
+
+#selectweapon 266 -- great bow
+#dmg 15
+#end
+
 #selectweapon 288 -- obsidian club sword 2h
 #att 1
 #end
@@ -89,6 +121,10 @@
 #selectweapon 451 -- obsidian club sword 1h
 #att 1
 #dmg 5
+#end
+
+#selectweapon 463 -- agarthan steel crossbow
+#dmg 12
 #end
 
 #selectweapon 572 -- spectral long spear
@@ -2822,7 +2858,7 @@ Syncretism: Enemy temples are not razed, but converted if a priest is in the arm
 #end
 
 #selectweapon 606 -- frost bow
-#dmg 8
+#dmg 9
 #range 40
 #att 1
 #end
