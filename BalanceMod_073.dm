@@ -1211,7 +1211,7 @@
 #end
 
 #selectmonster 297 -- phantasmal warrior
-#hp 10
+#hp 2
 #descr "The phantasmal warrior is an illusion of a warrior. The phantasm is elusive and difficult to hit but easy to destroy with magic. The weapons of a phantasm are unreal and will only harm those who believe them to be real."
 #end
 
