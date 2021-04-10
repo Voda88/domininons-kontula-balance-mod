@@ -44,6 +44,10 @@
 #dmg 9
 #end
 
+#selectweapon 26 -- arbalest
+#dmg 16
+#end
+
 #selectweapon 24 -- long bow
 #dmg 12
 #end
@@ -113,6 +117,10 @@
 #selectweapon 451 -- obsidian club sword 1h
 #att 1
 #dmg 5
+#end
+
+#selectweapon 463 -- agarthan steel crossbow
+#dmg 12
 #end
 
 #selectweapon 572 -- spectral long spear
