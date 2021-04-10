@@ -40,6 +40,10 @@
 #dmg 9
 #end
 
+#selectweapon 24 -- long bow
+#dmg 12
+#end
+
 #selectweapon 28 -- long spear
 #att 1
 #end
@@ -60,6 +64,10 @@
 
 #selectweapon 224 -- poison spit, unused
 #range0
+#end
+
+#selectweapon 264 -- composite bow
+#dmg 10
 #end
 
 #selectweapon 288 -- obsidian club sword 2h
