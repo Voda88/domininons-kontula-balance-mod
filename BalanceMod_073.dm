@@ -4233,7 +4233,7 @@ Dominion: Spreads Turmoil"
 #end
 
 #selectitem 444 -- enchanted salt
-#itemcost1 -60
+#itemcost1 -80
 #constlevel 2
 #end
 
