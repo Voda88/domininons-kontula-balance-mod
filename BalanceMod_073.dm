@@ -1399,7 +1399,7 @@
 #end
 
 #selectitem 10 -- ice sword
-#itemcost1 -20
+#itemcost1 -80
 #end
 
 #selectitem 11 -- ice lance
