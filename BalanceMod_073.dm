@@ -87,6 +87,10 @@
 #dmg 10
 #end
 
+#selectweapon 266 -- great bow
+#dmg 15
+#end
+
 #selectweapon 288 -- obsidian club sword 2h
 #att 1
 #end
