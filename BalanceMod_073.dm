@@ -1,6 +1,6 @@
-#modname "BalanceMod 0.73"
-#description "Occasionally the hand of balance must be forced"
-#version 0.73
+#modname "k-balance 0.01"
+#description "Often the hand of balance must be forced"
+#version 0.01
 #icon "./balance/banner.tga"
 
 -- SCALES  
