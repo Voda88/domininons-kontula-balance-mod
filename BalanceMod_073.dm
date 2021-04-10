@@ -1403,7 +1403,7 @@
 #end
 
 #selectitem 11 -- ice lance
-#itemcost1 -20
+#itemcost1 -80
 #end
 
 #selectitem 12 -- ice mist scimitar
