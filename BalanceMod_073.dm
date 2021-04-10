@@ -1462,7 +1462,7 @@
 #end
 
 #selectitem 49 -- gloves of gladiator
-#itemcost1 -50
+#itemcost1 -80
 #end
 
 #selectitem 64 -- thunder whip
