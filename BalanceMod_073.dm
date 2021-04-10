@@ -48,6 +48,10 @@
 #dmg 12
 #end
 
+#selectweapon 212 -- fire long bow
+#dmg 12
+#end
+
 #selectweapon 28 -- long spear
 #att 1
 #end
