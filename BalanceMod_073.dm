@@ -604,6 +604,10 @@
 #nreff 2010
 #end
 
+#selectspell 723 -- summon killer mantis
+#nreff 2010
+#end
+
 #selectmonster 593 -- draconian
 #att 12
 #prot 12
