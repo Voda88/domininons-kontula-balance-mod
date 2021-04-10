@@ -36,6 +36,10 @@
 #def 0
 #end
 
+#selectweapon 23 -- short bow
+#dmg 9
+#end
+
 #selectweapon 28 -- long spear
 #att 1
 #end
