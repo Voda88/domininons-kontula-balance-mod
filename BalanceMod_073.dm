@@ -1746,6 +1746,43 @@
 #constlevel 4
 #end
 
+#newitem 521 -- frozen grenade
+#name "Frozen Grenade"
+#constlevel 4
+#mainpath 2
+#mainlevel 3
+#spr "./balance/frozengrenade.tga"
+#type 1
+#descr "This frozen globe creates a freezing blast that encases nearby enemies in blocks of ice."
+#weapon 901
+#autospellrepeat 0
+#prec 2
+#coldres 5
+#end
+
+#newweapon 901
+#name "Frozen Grenade"
+#dmg 1
+#nratt 1
+#att 0
+#def 0
+#len 0
+#sound 21
+#natural
+#range -1
+#ammo 10
+#dt_normal
+on
+#armornegating
+#nostr
+#mrnegates
+#aoe 4
+#secondaryeffectalways 409
+#explspr 10108
+#flightspr 137
+#end
+
+
 #selectitem 217 -- silver hauberk
 #mainlevel 1
 #end
