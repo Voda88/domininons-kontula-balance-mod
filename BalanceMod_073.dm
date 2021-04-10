@@ -5076,6 +5076,10 @@ Priests: Average"
 #rcost 22
 #end
 
+#selectweapon 594 -- poison bow
+#dmg 9
+#end
+
 #selectmonster 878 -- machaka militia
 #gcost 10006
 #end
