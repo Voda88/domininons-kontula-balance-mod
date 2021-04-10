@@ -74,6 +74,10 @@
 #dmg 10
 #end
 
+#selectweapon 356 -- fire composite bow
+#dmg 10
+#end
+
 #selectweapon 288 -- obsidian club sword 2h
 #att 1
 #end
