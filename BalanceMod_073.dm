@@ -1424,7 +1424,7 @@
 #end
 
 #selectitem 15 -- sword of swiftness
-#itemcost1 -40
+#itemcost1 -60
 #end
 
 #selectitem 17 -- sling of accuracy
