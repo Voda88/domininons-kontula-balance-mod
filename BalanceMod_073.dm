@@ -53,11 +53,11 @@
 #end
 
 #selectweapon 24 -- long bow
-#dmg 12
+#dmg 11
 #end
 
 #selectweapon 212 -- fire long bow
-#dmg 12
+#dmg 11
 #end
 
 #selectweapon 25 -- crossbow
