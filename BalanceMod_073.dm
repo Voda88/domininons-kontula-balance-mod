@@ -1490,6 +1490,10 @@
 #itemcost1 -40
 #end
 
+#selectitem 65 -- trueshot longbow
+#itemcost1 -80
+#end
+
 #selectitem 66 -- ice pebble staff
 #itemcost1 -50
 #end
