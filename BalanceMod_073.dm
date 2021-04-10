@@ -40,6 +40,10 @@
 #dmg 9
 #end
 
+#selectweapon 211 -- fire short bow
+#dmg 9
+#end
+
 #selectweapon 24 -- long bow
 #dmg 12
 #end
