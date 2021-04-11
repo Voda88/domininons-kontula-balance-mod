@@ -4697,6 +4697,20 @@ Dominion: Spreads Turmoil"
 #armor 20
 #end
 
+#selectmonster 50 -- slinger
+#gcost 10005
+#rpcost 3000
+#end
+
+#selectmonster 150 -- war elephant
+#gcost 70
+#end
+
+#selectmonster 201 -- peltast
+#gcost 10007
+#rpcost 5000
+#end
+
 #selectmonster 747 -- heart companion
 #att 13
 #def 12
