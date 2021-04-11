@@ -4830,6 +4830,11 @@ Dominion: Spreads Turmoil"
 #rpcost 5
 #end
 
+#selectmonster 663 -- alae legionnaire
+#gcost 10009
+#rpcost 7
+#end
+
 #selectmonster 665 -- principe
 #gcost 10012
 #end
