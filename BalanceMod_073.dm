@@ -199,6 +199,10 @@
 #def 3
 #end
 
+#selectarmor 5 -- leather cuirass
+#rcost 0
+#end
+
 #selectarmor 9 -- plate cuirass
 #rcost 12
 #end
