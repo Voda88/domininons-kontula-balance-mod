@@ -41,6 +41,10 @@
 #dmg 8
 #end
 
+#selectweapon 209 -- fire javelin
+#dmg 8
+#end
+
 #selectweapon 23 -- short bow
 #dmg 9
 #end
