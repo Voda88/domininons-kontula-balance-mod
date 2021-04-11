@@ -36,6 +36,11 @@
 #def 0
 #end
 
+#selectweapon 21 -- javelin
+#rcost 3
+#dmg 7
+#end
+
 #selectweapon 23 -- short bow
 #dmg 9
 #end
