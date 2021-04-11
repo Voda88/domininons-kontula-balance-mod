@@ -85,6 +85,10 @@
 #att 0
 #end
 
+#selectweapon 123 -- javelin of flight
+#dmg 12
+#end
+
 #selectweapon 141 -- poison spit used mainly by nagas
 #range0
 #end
@@ -150,6 +154,11 @@
 
 #selectweapon 590 -- short pike
 #att 1
+#end
+
+#selectweapon 640 -- coral tipped javelin
+#rcost 5
+#dmg 8
 #end
 
 #selectweapon 644 -- bronze long spear
