@@ -4691,6 +4691,12 @@ Dominion: Spreads Turmoil"
 #skirmisher 1
 #end
 
+#selectmonster 200 -- chariot
+#cleararmor
+#armor 14
+#armor 20
+#end
+
 #selectmonster 747 -- heart companion
 #att 13
 #def 12
