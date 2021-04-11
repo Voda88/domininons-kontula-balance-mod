@@ -4800,6 +4800,7 @@ Dominion: Spreads Turmoil"
 
 #selectmonster 2244 -- scelerian cultist
 #rpcost 2
+#gcost 70
 #end
 
 #newmonster 8004
