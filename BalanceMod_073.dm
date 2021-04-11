@@ -4646,7 +4646,7 @@ Dominion: Spreads Turmoil"
 #req_capital 1
 #end
 
--- ARCOCESPHALE
+-- ARCOSCEPHALE
 #selectnation 43
 #cheapgod20 1348 -- titan of serpents and medicine
 #startcom 15 -- hypaspist commander
@@ -6554,7 +6554,7 @@ Priests: Average"
 #req_capital 1
 #end
 
--- ARCOCESPHALE
+-- ARCOSCEPHALE
 #selectnation 80
 #cheapgod40 1348 -- titan of serpents and medicine
 #startunitnbrs1 20
