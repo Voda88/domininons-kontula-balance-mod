@@ -4825,6 +4825,11 @@ Dominion: Spreads Turmoil"
 #homecom 8004
 #end
 
+#selectmonster 662 -- velite
+#gcost 10008
+#rpcost 5
+#end
+
 #selectmonster 665 -- principe
 #gcost 10012
 #end
