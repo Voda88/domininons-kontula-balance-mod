@@ -225,6 +225,10 @@
 #rcost 0
 #end
 
+#selectarmor 6 -- ring mail cuirass
+#rcost 1
+#end
+
 #selectarmor 9 -- plate cuirass
 #rcost 12
 #end
