@@ -4699,7 +4699,7 @@ Dominion: Spreads Turmoil"
 
 #selectmonster 50 -- slinger
 #gcost 10005
-#rpcost 3000
+#rpcost 3
 #end
 
 #selectmonster 150 -- war elephant
@@ -4708,12 +4708,12 @@ Dominion: Spreads Turmoil"
 
 #selectmonster 199 -- cardaces
 #gcost 10007
-#rpcost 5000
+#rpcost 5
 #end
 
 #selectmonster 201 -- peltast
 #gcost 10007
-#rpcost 5000
+#rpcost 5
 #end
 
 #selectmonster 747 -- heart companion
