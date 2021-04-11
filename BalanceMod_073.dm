@@ -223,6 +223,10 @@
 #enc 3
 #end
 
+#selectarmor 15 -- full leather armor
+#rcost 2
+#end
+
 #selectarmor 19 -- full plate mail
 #enc 4
 #end
@@ -2350,7 +2354,7 @@
 -- NATIONS
 -- EARLY AGE
 
--- ARCOCESPHALE
+-- ARCOSCEPHALE
 #selectnation 5
 #cheapgod20 1348 -- titan of serpents and medicine
 #startunitnbrs1 20
