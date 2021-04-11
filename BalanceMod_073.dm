@@ -207,6 +207,10 @@
 #rcost 12
 #end
 
+#selectarmor 10 -- leather hauberk
+#rcost 1
+#end
+
 #selectarmor 12 -- scale mail hauberk
 #rcost 10
 #end
