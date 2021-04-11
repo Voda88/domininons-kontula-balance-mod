@@ -4693,7 +4693,7 @@ Dominion: Spreads Turmoil"
 
 #selectmonster 200 -- chariot
 #cleararmor
-#armor 14
+#armor 9
 #armor 20
 #end
 
