@@ -4706,6 +4706,11 @@ Dominion: Spreads Turmoil"
 #gcost 70
 #end
 
+#selectmonster 199 -- cardaces
+#gcost 10007
+#rpcost 5000
+#end
+
 #selectmonster 201 -- peltast
 #gcost 10007
 #rpcost 5000
