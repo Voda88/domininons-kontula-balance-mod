@@ -36,6 +36,15 @@
 #def 0
 #end
 
+#selectweapon 21 -- javelin
+#rcost 5
+#dmg 8
+#end
+
+#selectweapon 209 -- fire javelin
+#dmg 8
+#end
+
 #selectweapon 23 -- short bow
 #dmg 9
 #end
@@ -53,11 +62,11 @@
 #end
 
 #selectweapon 24 -- long bow
-#dmg 12
+#dmg 11
 #end
 
 #selectweapon 212 -- fire long bow
-#dmg 12
+#dmg 11
 #end
 
 #selectweapon 25 -- crossbow
@@ -74,6 +83,10 @@
 
 #selectweapon 46 -- coral glaive
 #att 0
+#end
+
+#selectweapon 123 -- javelin of flight
+#dmg 12
 #end
 
 #selectweapon 141 -- poison spit used mainly by nagas
@@ -100,6 +113,10 @@
 
 #selectweapon 266 -- great bow
 #dmg 15
+#end
+
+#selectweapon 279 -- spectral javelin
+#dmg 5
 #end
 
 #selectweapon 288 -- obsidian club sword 2h
@@ -141,6 +158,11 @@
 
 #selectweapon 590 -- short pike
 #att 1
+#end
+
+#selectweapon 640 -- coral tipped javelin
+#rcost 5
+#dmg 8
 #end
 
 #selectweapon 644 -- bronze long spear
@@ -199,8 +221,20 @@
 #def 3
 #end
 
+#selectarmor 5 -- leather cuirass
+#rcost 0
+#end
+
+#selectarmor 6 -- ring mail cuirass
+#rcost 1
+#end
+
 #selectarmor 9 -- plate cuirass
 #rcost 12
+#end
+
+#selectarmor 10 -- leather hauberk
+#rcost 1
 #end
 
 #selectarmor 12 -- scale mail hauberk
@@ -213,6 +247,10 @@
 
 #selectarmor 14 -- plate hauberk
 #enc 3
+#end
+
+#selectarmor 15 -- full leather armor
+#rcost 2
 #end
 
 #selectarmor 19 -- full plate mail
@@ -2397,13 +2435,13 @@ on
 -- NATIONS
 -- EARLY AGE
 
--- ARCOCESPHALE
+-- EA ARCOSCEPHALE
 #selectnation 5
 #cheapgod20 1348 -- titan of serpents and medicine
 #startunitnbrs1 20
 #end
 
--- ERMOR
+-- EA ERMOR
 #selectnation 6
 #syncretism 1
 #descr "Ermor is an empire centered around a great city. For centuries it has grown and become more and more influential. Traders and travelers from near and far come to the city. By military campaigns, diplomacy and trade, Ermor has become a power to be reckoned with. By adopting local traditions and beliefs, the Ermorians posed little threat to neighbors and conquered peoples, but this has changed. A new God is rising. Old faiths and spirit worship were banned by a Prophet dressed in white shrouds. The remnants of his body and shrouds are buried in the Holy City of Eldregate where the adherents of the New Faith are awaiting the arrival of the Reawakening God foreseen by the Prophet. The all-encompassing old state cult of the Numinas still survives, but the Pontifices and Flamen are slowly adopting the New Faith."
@@ -2473,13 +2511,13 @@ Syncretism: Enemy temples are not razed, but converted if a priest is in the arm
 #end
 
 
--- ULM
+-- EA ULM
 #selectnation 7
 #startunittype2 1155 -- mountain warrior
 #startunitnbrs2 15
 #end
 
--- MARVERNI
+-- EA MARVERNI
 #selectmonster 1208 -- eponi knight
 #clearweapons
 #weapon 8 -- broad sword
@@ -2501,7 +2539,7 @@ Syncretism: Enemy temples are not razed, but converted if a priest is in the arm
 #mr 8
 #end
 
--- SAUROMATIA
+-- EA SAUROMATIA
 #newmonster 8001
 #copyspr 1589 -- skagu
 #copystats 1178
@@ -2627,7 +2665,7 @@ Syncretism: Enemy temples are not razed, but converted if a priest is in the arm
 #pooramphibian
 #end
 
--- T'IEN C'HI
+-- EA T'IEN C'HI
 #selectmonster 794 -- footman
 #formationfighter 2
 #end
@@ -2716,7 +2754,7 @@ Syncretism: Enemy temples are not razed, but converted if a priest is in the arm
 #end
 
 
--- MICTLAN
+-- EA MICTLAN
 #selectnation 12
 #cheapgod20 858 -- smoking mirror jaguar form
 #end
@@ -2763,7 +2801,7 @@ Syncretism: Enemy temples are not razed, but converted if a priest is in the arm
 #end
 
 
--- ABYSIA
+-- EA ABYSIA
 #newspell
 #copyspell "Incinerate"
 #name "15 internal AN fire damage"
@@ -2864,7 +2902,7 @@ Syncretism: Enemy temples are not razed, but converted if a priest is in the arm
 #prec 13
 #end
 
--- CAELUM
+-- EA CAELUM
 #selectnation 14 
 #startunitnbrs1 20
 #end
@@ -2942,7 +2980,7 @@ Syncretism: Enemy temples are not razed, but converted if a priest is in the arm
 #incunrest 50
 #end
 
--- C'TIS
+-- EA C'TIS
 #selectnation 15
 #addreccom 8009 -- runner scout
 #swampcom 170 -- lizard shaman
@@ -3088,7 +3126,7 @@ Syncretism: Enemy temples are not razed, but converted if a priest is in the arm
 #end
 
 
--- PANGAEA
+-- EA PANGAEA
 #selectnation 16
 #summary "Race: Forest beings, stealthy troops, troops will heal battle afflictions
 Military: Satyr and minotaur infantry, centaur archers and warriors
@@ -3164,7 +3202,7 @@ Priests: Average, can perform blood sacrifices"
 #gcost 10011
 #end
 
--- AGARTHA
+-- EA AGARTHA
 #selectnation 17
 #startcom 1470 -- ancient lord
 #startunittype1 1464 -- pale one warrior w/scale cuirass
@@ -3328,7 +3366,7 @@ Priests: Average, can perform blood sacrifices"
 #def 11
 #end
 
--- TIR NA N'OG
+-- EA TIR NA N'OG
 
 #selectmonster 1754 -- ri
 #rpcost 3	
@@ -3368,7 +3406,7 @@ Priests: Average, can perform blood sacrifices"
 #gcost 180 -- from 145
 #end
 
--- FOMORIA
+-- EA FOMORIA
 #selectnation 19
 #uwbuild 1
 #end
@@ -3463,7 +3501,7 @@ Priests: Average, can perform blood sacrifices"
 #rpcost 35 -- from 28
 #end
 
--- HELHEIM
+-- EA HELHEIM
 #selectmonster 1502 -- helkarl
 #custommagic 17664 100
 #gcost 175 -- from 160
@@ -3484,7 +3522,7 @@ Priests: Average, can perform blood sacrifices"
 #rpcost 48 -- unchanged
 #end
 
--- NIEFELHEIM
+-- EA NIEFELHEIM
 #selectnation 22
 #cheapgod20 500
 #end
@@ -3638,7 +3676,7 @@ Priests: Average, can perform blood sacrifices"
 #researchlevel 0
 #end
 
--- RUS
+-- EA RUS
 #selectnation 24
 #startunittype1 2993 -- chud warrior
 #startunitnbrs2 20
@@ -3679,7 +3717,7 @@ Priests: Average, can perform blood sacrifices"
 #weapon 29
 #end
 
--- KAILASA
+-- EA KAILASA
 #selectnation 25
 #airblessbonus 1
 #astralblessbonus 1
@@ -3743,7 +3781,7 @@ Priests: Average, can perform blood sacrifices"
 #mr 7
 #end
 
--- LANKA
+-- EA LANKA
 #selectnation 26
 #startunittype1 1121 -- atavi archers
 #startunittype2 1762 -- bandar warriors
@@ -3773,7 +3811,7 @@ Priests: Average, can perform blood sacrifices"
 #gcost 160
 #end
 
--- YOMI
+-- EA YOMI
 #selectnation 27
 #nationinc -10
 #mountlabcost 250
@@ -3883,7 +3921,7 @@ Dominion: Spreads Turmoil"
 #end
 
 
--- HINNOM
+-- EA HINNOM
 #selectnation 28
 #end
 
@@ -3999,7 +4037,7 @@ Dominion: Spreads Turmoil"
 #def 8
 #end
 
--- UR
+-- EA UR
 #selectnation 29
 #waterblessbonus 1
 #startunitnbrs1 10
@@ -4164,7 +4202,7 @@ Dominion: Spreads Turmoil"
 #def 10
 #end
 
--- BERYTOS
+-- EA BERYTOS
 #selectmonster 2315 -- melqart
 #gcost 210
 #clearmagic
@@ -4208,7 +4246,7 @@ Dominion: Spreads Turmoil"
 #startunitnbrs2 15
 #end
 
--- XIBALBA
+-- EA XIBALBA
 #selectspell 403 -- theft of the sun
 #fatiguecost 5500
 #pathlevel 0 5
@@ -4247,7 +4285,7 @@ Dominion: Spreads Turmoil"
 #startunitnbrs2 25
 #end
 
--- MEKONE
+-- EA MEKONE
 #selectnation 32
 #homefort 14 -- great walled city
 #fortunrest 10
@@ -4330,7 +4368,7 @@ Dominion: Spreads Turmoil"
 #end
 
 
--- UBAR
+-- EA UBAR
 #selectmonster 3463 -- jinn warrior
 #reclimit 3
 #end
@@ -4366,7 +4404,7 @@ Dominion: Spreads Turmoil"
 #constlevel 2
 #end
 
--- ATLANTIS
+-- EA ATLANTIS
 #selectnation 36
 #startunittype1 1682 -- reef dweller
 #startunittype2 1687 -- deep one spearmen
@@ -4460,7 +4498,7 @@ Dominion: Spreads Turmoil"
 #mr 7
 #end
 
--- R'LYEH
+-- EA R'LYEH
 #selectsite 116 -- gorge of ancient cities
 #homemon 1529 -- slave troll
 #end
@@ -4531,7 +4569,7 @@ Dominion: Spreads Turmoil"
 #startunittype2 1526 -- slave guardian, triton
 #end
 
--- PELAGIA
+-- EA PELAGIA
 #selectnation 38
 #startunitnbrs1 15
 #startunittype2 2386
@@ -4563,7 +4601,7 @@ Dominion: Spreads Turmoil"
 #gcost 10010
 #end
 
--- OCEANIA
+-- EA OCEANIA
 #selectmonster 1038 -- capricorn, water
 #magicskill 1 1
 #magicboost 1 -1
@@ -4664,7 +4702,7 @@ Dominion: Spreads Turmoil"
 #startunitnbrs2 15
 #end
 
--- THERODOS 
+-- EA THERODOS 
 #selectnation 40
 #clearrec
 #addreccom 2833 -- melia
@@ -4690,7 +4728,7 @@ Dominion: Spreads Turmoil"
 #req_capital 1
 #end
 
--- ARCOCESPHALE
+-- MA ARCOSCEPHALE
 #selectnation 43
 #cheapgod20 1348 -- titan of serpents and medicine
 #startcom 15 -- hypaspist commander
@@ -4709,6 +4747,31 @@ Dominion: Spreads Turmoil"
 #skirmisher 1
 #end
 
+#selectmonster 200 -- chariot
+#cleararmor
+#armor 9
+#armor 20
+#end
+
+#selectmonster 50 -- slinger
+#gcost 10005
+#rpcost 3
+#end
+
+#selectmonster 150 -- war elephant
+#gcost 70
+#end
+
+#selectmonster 199 -- cardaces
+#gcost 10007
+#rpcost 5
+#end
+
+#selectmonster 201 -- peltast
+#gcost 10007
+#rpcost 5
+#end
+
 #selectmonster 747 -- heart companion
 #att 13
 #def 12
@@ -4716,7 +4779,7 @@ Dominion: Spreads Turmoil"
 #end
 
 
--- ERMOR
+-- MA ERMOR
 #selectnation 44
 #deathblessbonus 2
 #natureblessbonus -2
@@ -4754,7 +4817,7 @@ Dominion: Spreads Turmoil"
 #fear 5
 #end
 
--- SCELERIA
+-- MA SCELERIA
 #selectnation 45
 #deathblessbonus 1
 #end
@@ -4800,6 +4863,7 @@ Dominion: Spreads Turmoil"
 
 #selectmonster 2244 -- scelerian cultist
 #rpcost 2
+#gcost 65
 #end
 
 #newmonster 8004
@@ -4825,6 +4889,16 @@ Dominion: Spreads Turmoil"
 #homecom 8004
 #end
 
+#selectmonster 662 -- velite
+#gcost 10008
+#rpcost 5
+#end
+
+#selectmonster 663 -- alae legionnaire
+#gcost 10009
+#rpcost 7
+#end
+
 #selectmonster 665 -- principe
 #gcost 10012
 #end
@@ -4834,7 +4908,7 @@ Dominion: Spreads Turmoil"
 #end
 
 
--- PYTHIUM
+-- MA PYTHIUM
 #selectnation 46
 #astralblessbonus 1
 #summary "Race: Humans
@@ -4892,7 +4966,7 @@ Priests: Powerful"
 
 
 
--- MAN
+-- MA MAN
 #newmonster 8005
 #copystats 2129 -- Logrian Cavalry
 #spr1 "./balance/logriancom1.tga"
@@ -4929,7 +5003,7 @@ Most Crones are incredibly old and few of them would travel far from their sacre
 #end
 
 
--- ERIU
+-- MA ERIU
 #selectnation 48
 #addreccom 1774 -- bean sidhe
 #startunittype1 1785 -- fir bolg slinger
@@ -5006,7 +5080,7 @@ Most Crones are incredibly old and few of them would travel far from their sacre
 #nationrebate 48
 #end
 
--- ULM
+-- MA ULM
 #selectmonster 79 -- pikeneer
 #formationfighter 2
 #end
@@ -5019,7 +5093,7 @@ Most Crones are incredibly old and few of them would travel far from their sacre
 #rcost 15
 #end
 
--- MARIGNON
+-- MA MARIGNON
 #selectnation 50
 #domwar 1
 #summary "Race: Humans
@@ -5058,7 +5132,7 @@ Dominion: Dominion Conflict Bonus +1 (good at suppressing enemy dominion)"
 #end
 
 
--- MICTLAN
+-- MA MICTLAN
 #selectmonster 1193 -- sun priest
 #sunawe 1
 #end
@@ -5068,7 +5142,7 @@ Dominion: Dominion Conflict Bonus +1 (good at suppressing enemy dominion)"
 #def 10
 #end
 
--- T'IEN C'HI
+-- MA T'IEN C'HI
 #selectnation 52 
 #startunittype1 1903 -- ministry footman w/spear
 #startunitnbrs2 20
@@ -5097,7 +5171,7 @@ Dominion: Dominion Conflict Bonus +1 (good at suppressing enemy dominion)"
 #end
 
 
--- MACHAKA
+-- MA MACHAKA
 #selectnation 53
 #startunitnbrs1 20
 #startunittype2 882 -- machaka hoplite
@@ -5137,6 +5211,10 @@ Priests: Average"
 #def -2
 #enc 3
 #rcost 22
+#end
+
+#selectweapon 594 -- poison bow
+#dmg 9
 #end
 
 #selectmonster 878 -- machaka militia
@@ -5253,7 +5331,7 @@ Priests: Average"
 #magicskill 5 1
 #end
 
--- AGARTHA
+-- MA AGARTHA
 #selectmonster 1472 -- pale one soldier
 #rpcost 15
 #att 9
@@ -5286,7 +5364,7 @@ Priests: Average"
 #holy
 #end
 
--- ABYSIA
+-- MA ABYSIA
 #selectmonster 85 -- anathemant salamander
 #prec 11
 #prot 3
@@ -5333,7 +5411,7 @@ Priests: Average"
 #prec 12
 #end
 
--- CAELUM
+-- MA CAELUM
 #selectnation 56
 #idealcold 2
 #startunittype1 131 -- spire horn warrior
@@ -5352,7 +5430,7 @@ Priests: Average"
 #gcost 10012
 #end
 
--- C'TIS
+-- MA C'TIS
 #selectmonster 503 -- poison slinger
 #gcost 10020
 #end
@@ -5440,7 +5518,7 @@ Priests: Average"
 #startunitnbrs2 15
 #end
 
--- PANGAEA
+-- MA PANGAEA
 #selectnation 58
 #fortunrest 10
 #end
@@ -5499,7 +5577,7 @@ Priests: Average"
 #rpcost 25000
 #end
 
--- ASPHODEL
+-- MA ASPHODEL
 #selectnation 59
 #natureblessbonus 1
 #deathblessbonus 1
@@ -5581,7 +5659,7 @@ Priests: Average"
 #carcasscollector 3
 #end
 
--- VANHEIM
+-- MA VANHEIM
 #selectnation 60
 #startunitnbrs1 15
 #startunitnbrs2 15
@@ -5591,7 +5669,7 @@ Priests: Average"
 #darkvision 50
 #end
 
--- JOTUNHEIM
+-- MA JOTUNHEIM
 #selectnation 61
 #cheapgod20 500
 #end
@@ -5703,7 +5781,7 @@ Priests: Average"
 #darkvision 50
 #end
 
--- VANARUS
+-- MA VANARUS
 #selectnation 62
 #startunitnbrs1 15
 #startunitnbrs2 15
@@ -5719,7 +5797,7 @@ Priests: Average"
 #end
 
 
--- BANDAR LOG
+-- MA BANDAR LOG
 #selectnation 63
 #startunittype1 1123 -- vanara archers
 #startunittype2 1133 -- bandar warriors w/maces & bucklers
@@ -5752,7 +5830,7 @@ Priests: Average"
 
 
 
--- SHINUYAMA
+-- MA SHINUYAMA
 #selectnation 64 -- Shinuyama
 #templecost 200
 #mountlabcost 250
@@ -5799,7 +5877,7 @@ Priests: Average"
 #att 0
 #end
 
--- ASHDOD
+-- MA ASHDOD
 #selectmonster 2025 -- sheshai anakite
 #hp 46
 #rpcost 54
@@ -5823,7 +5901,7 @@ Priests: Average"
 #end
 
 
--- URUK
+-- MA URUK
 #selectnation 66
 #addforeigncom 2942 -- enkidu commander
 #startunitnbrs2 12
@@ -5922,7 +6000,7 @@ Priests: Average"
 #def 10
 #end
 
--- NAZCA
+-- MA NAZCA
 #selectnation 67
 #startunitnbrs1 18
 #startunitnbrs2 18
@@ -5999,7 +6077,7 @@ Priests: Average"
 #mr 8
 #end
 
--- XIBALBA
+-- MA XIBALBA
 #selectnation 68
 #startunitnbrs1 16
 #startunittype2 2725 -- muuch warrior w w/spear & medium armor
@@ -6108,7 +6186,7 @@ Priests: Average"
 #rcost 16
 #end
 
--- PHLEGRA
+-- MA PHLEGRA
 #selectnation 69
 #addforeignunit 3132 -- helote archer
 #startunitnbrs1 15
@@ -6161,7 +6239,7 @@ Priests: Average"
 #restricted 102
 #end
 
--- PHAECIA
+-- MA PHAECIA
 #selectnation 70
 #startunittype1 3146 -- infantry
 #startunitnbrs1 15
@@ -6217,7 +6295,7 @@ Priests: Average"
 #itemcost2 -40
 #end
 
--- IND
+-- MA IND
 
 
 #selectmonster 3281 -- baculite
@@ -6271,7 +6349,7 @@ Priests: Average"
 #fatiguecost 1200
 #end
 
--- NA'BA
+-- MA NA'BA
 #selectnation 72
 #cheapgod20 3473 -- firstborn of the smokeless flame
 #end
@@ -6311,7 +6389,7 @@ Priests: Average"
 
 
 
--- ATLANTIS
+-- MA ATLANTIS
 #selectnation 73
 #startcom 441 -- consort
 #startunittype1 1621 -- infantry
@@ -6360,7 +6438,7 @@ Priests: Average"
 #armor 25 -- turtle shell shield
 #end
 
--- R'LYEH
+-- MA R'LYEH
 #selectnation 74
 #startunitnbrs1 25
 #startunittype2 336 -- slave guardian w/shell armor & cap
@@ -6456,7 +6534,7 @@ Priests: Average"
 #restricted 104
 #end
 
--- PELAGIA
+-- MA PELAGIA
 #selectnation 75
 #startcom 2421 -- amber clan noble
 #startunittype1 1046 -- merman
@@ -6491,7 +6569,7 @@ Priests: Average"
 
 
 
--- OCEANIA
+-- MA OCEANIA
 #selectnation 76
 #startcom 2410 -- ichtycentaur commander
 #startunittype1 2406 -- ichtysatyr w/shield 
@@ -6517,7 +6595,7 @@ Priests: Average"
 #weapon 589
 #end
 
--- YS
+-- MA YS
 #selectnation 77 
 #coastcom1 2913 -- ysian commander
 #coastcom2 2912 -- ysian scout
@@ -6601,7 +6679,7 @@ Priests: Average"
 #req_capital 1
 #end
 
--- ARCOCESPHALE
+-- LA ARCOSCEPHALE
 #selectnation 80
 #cheapgod40 1348 -- titan of serpents and medicine
 #startunitnbrs1 20
@@ -6625,7 +6703,7 @@ Priests: Average"
 #provrange 4
 #end
 
--- PYTHIUM
+-- LA PYTHIUM
 #selectnation 81
 #summary "Race: Humans
 Military: Heavy legionnaires, sacred serpent cataphracts, gladiators, sacred hydras
@@ -6786,7 +6864,7 @@ Priests: Weak, one available priest of average level. Heretical mystics who lowe
 #fatiguecost 600
 #end
 
--- LEMURIA
+-- LA LEMURIA
 #selectnation 82
 #astralblessbonus 1
 #deathblessbonus 1
@@ -6828,7 +6906,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #precision 100
 #end
 
--- MAN
+-- LA MAN
 #selectnation 83
 #startunittype1 1642
 #startunitnbrs1 15
@@ -6937,7 +7015,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #weapon 63 -- life drain
 #end
 
--- MARIGNON
+-- LA MARIGNON
 #selectnation 85
 #startunittype1 2110 -- pikeneer
 #startunitnbrs1 15
@@ -6978,7 +7056,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #mor 12 -- from 14
 #end
 
--- MICTLAN
+-- LA MICTLAN
 #selectnation 86
 #startunittype1 1546
 #startunittype2 1547
@@ -6997,7 +7075,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #end
 
 
--- T'IEN C'HI
+-- LA T'IEN C'HI
 #selectnation 87
 #startunittype1 1904 -- medium footman w/spear
 #startunitnbrs2 20
@@ -7020,7 +7098,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #secondaryeffectalways 440
 #end
 
--- JOMON
+-- LA JOMON
 #selectnation 89 -- Jomon
 #addforeigncom 2098 -- monk of the fivefold path
 #fortera 3
@@ -7199,7 +7277,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #rcost 3 -- from 4
 #end
 
--- AGARTHA
+-- LA AGARTHA
 #selectnation 90
 #startunittype1 1355 -- infantry
 #startunitnbrs1 16
@@ -7223,7 +7301,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #restricted 90
 #end
 
--- ABYSIA
+-- LA ABYSIA
 #selectnation 91
 #startunitnbrs2 15
 #end
@@ -7258,7 +7336,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #end
 
 
--- CAELUM
+-- LA CAELUM
 #selectnation 92
 #startunitnbrs2 15
 #end
@@ -7267,7 +7345,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #gcost 10012
 #end
 
--- C'TIS
+-- LA C'TIS
 #selectnation 93
 #fireblessbonus 1
 #deathblessbonus 1
@@ -7301,7 +7379,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #enc 3
 #end
 
--- PANGAEA
+-- LA PANGAEA
 #selectnation 94
 #startunittype1 697 -- hoplite
 #startunitnbrs1 12
@@ -7372,7 +7450,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #end
 
 
--- MIDGARD
+-- LA MIDGARD
 #selectnation 95
 #startunitnbrs1 15
 #startunitnbrs2 15
@@ -7386,7 +7464,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #darkvision 50
 #end
 
--- UTGARD
+-- LA UTGARD
 #selectmonster 784 -- garmhirding
 #mountainsurvival
 #end
@@ -7405,7 +7483,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #darkvision 50
 #end
 
--- BOGARUS
+-- LA BOGARUS
 #selectnation 97
 #startcom 1917 -- kynaz
 #startunittype1 1931 -- voia archer
@@ -7414,7 +7492,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #startunitnbrs2 20
 #end
 
--- PATALA
+-- LA PATALA
 #selectnation 98
 #startunittype1 1123 -- vanara archer
 #startunittype2 1133 -- bandar warrior w/mace & buckler
@@ -7440,7 +7518,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #len 7
 #end
 
--- GATH
+-- LA GATH
 #selectmonster 1998 -- fossil warrior
 #holy
 #end
@@ -7453,7 +7531,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #fatiguecost 1500
 #end
 
--- RAGHA
+-- LA RAGHA
 #selectnation 100
 #startunitnbrs1 15
 #end
@@ -7498,7 +7576,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #rcost 20 -- from 17
 #end
 
--- XIBALBA
+-- LA XIBALBA
 #selectnation 101
 #startunitnbrs1 20
 #startunitnbrs2 20
@@ -7573,7 +7651,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #rpcost 9000
 #end
 
--- PHLEGRA
+-- LA PHLEGRA
 #selectmonster 3220 -- shackled mage
 #gcost 60
 #startaff 10
@@ -7583,7 +7661,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #formationfighter 4
 #end
 
--- VAETTIHEIM
+-- LA VAETTIHEIM
 #selectmonster 3409 -- jotun gygja
 #mountainsurvival
 #end
@@ -7614,7 +7692,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #nationrebate 103 -- vaettiheim
 #end
 
--- ATLANTIS
+-- LA ATLANTIS
 #selectnation 106
 #startunitnbrs1 12
 #startunittype2 1703 -- mournful
@@ -7639,7 +7717,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #weapon "Coral Poleaxe"
 #end
 
--- R'LYEH
+-- LA R'LYEH
 #selectnation 107
 #startunitnbrs1 25
 #startunittype2 336 -- slave guardian w/shell armor & cap
@@ -7696,7 +7774,7 @@ Dominion: Summons ghosts and shadows. Kills population."
 #gcost 0
 #end
 
--- ERYTHEIA
+-- LA ERYTHEIA
 #selectnation 108
 #uwrec 3030 -- crossbowman
 #startunitnbrs1 16
